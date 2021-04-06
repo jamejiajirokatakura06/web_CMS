@@ -1,0 +1,70 @@
+#about-banner
+{    
+    position: relative;
+    background-color:	#b3b3cc;
+    height: 620px;   
+    margin-top:80px;
+
+}
+
+#about-banner .name
+{
+    top: 150px;
+    text-shadow: 5px 1px 10px gray;
+    
+}
+
+#about-banner .name h1
+{
+    font-size: 40px;
+    
+}
+
+#about-banner .name h2
+{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+#about-banner .photo
+{
+    width: 560px;
+    height: 315px;
+    background-color: black;
+    left: 630px;
+    top: 150px;
+    box-shadow: 12px 12px 7px #8585ad;
+    
+}
+
+
+.absolute
+{
+    position: absolute;
+}
+
+.abstract img {
+    filter: opacity(20%);
+    height: 1100px;
+}
+
+#about-content .title
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about-content .content
+{
+    font-size: 20px;
+    line-height: 45px;
+}
+
+#about-content .content img
+{
+    float:left;
+    width: 300px;
+    margin-right: 20px;
+}
+

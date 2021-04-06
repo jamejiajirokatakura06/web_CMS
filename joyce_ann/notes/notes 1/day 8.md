@@ -1,0 +1,4 @@
+- Public Pages
+- CMS Page
+- Table - https://www.w3schools.com/html/html_tables.asp
+- UL/OL/LI - https://www.w3schools.com/css/css_list.asp

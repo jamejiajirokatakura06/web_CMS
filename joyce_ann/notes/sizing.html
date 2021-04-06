@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> All About Sizing</title>
+</head>
+<body>
+<style type="text/css">
+.section
+{
+border: 1px solid black;
+}
+.small-px
+{
+width: 100px;
+}
+.small-pct
+{
+width: 40%;
+}
+.medium-px
+{
+width: 400px;
+}
+</style>
+<!--Scenario 1*/-->
+
+<div class="section small-px">Box - Pixel</div>
+<div class="section small-pct">Box 1- PCT</div>
+<br />
+<!--Scenario 2*/-->
+
+<div class="section medium-px">
+    <div class="section small-pct">Box 2- PCT</div>
+</div>
+</body>
+</html>

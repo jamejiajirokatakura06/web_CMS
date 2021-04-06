@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>--title--</title>
+        <link rel="stylesheet" href="view/css/global.css" />
+        <link rel="stylesheet" href="view/css/--css-page--" />
+    </head> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script>
+        function getLogin()
+        {
+            $('#cover').removeClass('hide');
+        }
+
+        function removeLogin()
+        {
+            $('#cover').addClass('hide');
+            $('#login-message').addClass('hide');
+        }
+
+        function removeSuccess()
+        {
+            $('#contact-sent').addClass('hide');
+        }
+
+        function login()
+        {                
+            document.getElementById('login-form').submit();
+        }
+    </script>
+
+<body>
+    <div id="cover" class="cover --login--">
+        <div class="background"></div>
+        <div class="form">            
+            <div class="row-mid">
+                <div id="login-message" class="center --login--" style="color:rgb(181, 59, 140);">
+                    Invalid username or password
+                    <br/><br/>
+                </div>
+                <form id="login-form" action="cms.php?page=authentication" method="POST">
+                    <table style="width:100%">
+                        <tr>
+                            <td style="width:30%">Username:</td>
+                            <td style="width:70%">
+                                <div class="input">
+                                    <input id="username" name="username" type="text" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td>
+                                <div class="input">
+                                    <input id="password" name="password" type="password" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">
+                                <a onclick="removeLogin()" class="button medium" style="background-color: crimson;">Cancel</a>
+                                <a onclick="login()" class="button medium">Login</a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>                
+        </div>        
+    </div>   
+
+    <div id="top-header" class="row-border fixed">
+        <div class="row-mid">
+            <div class="section left logo">
+                <img src="view/images/icons/mami.png" />
+            </div>    
+            <!--Float Right, right to left orientation-->
+            <div class="section right link-login">
+                <a onclick="getLogin()" href="#" class="button">Login</a>
+            </div>   
+            <div class="section right links">                
+                <a href="/">About Me</a>
+                <a href="/?page=contact">Contact Me</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>

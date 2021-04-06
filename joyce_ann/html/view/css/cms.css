@@ -1,0 +1,85 @@
+#dash-home
+{
+    padding-top: 250px;
+}
+
+#dash-header
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#dash-header .left
+{
+    float: left;
+}
+
+#dash-header .right
+{
+    float: right;
+}
+
+#dash-title
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.dash-item
+{
+    display: inline-block;
+    width: 250px;
+    padding: 30px;
+    border: 1px solid rgb(180, 180, 180);
+    margin: 20px;
+}
+
+.dash-item .button
+{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.dash-item h1
+{
+    font-size: 25px;
+}
+
+.dash-item div
+{
+    padding-top: 40px;
+}
+
+.table-list .header {
+    font-size: 14px;    
+}
+
+.table-list .header td {    
+    background-color: rgb(221, 221, 221);
+    vertical-align: middle;
+}
+
+.table-list .list td /*x*/
+{
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.table-list .list .button /*x*/
+{
+    width: auto;
+    padding: 10px 15px 10px 15px;
+}
+
+
+.table-list .list:hover td /*x*/
+{
+    background-color: rgb(250, 250, 250);
+}
+
+.table-list .list.bold td /*x*/
+{
+    font-weight: bold;
+}
+

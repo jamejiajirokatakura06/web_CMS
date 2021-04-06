@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    <script>
+        
+        function showValue(id)
+        {
+            output  = add(); 
+            document.getElementById(id).innerHTML = output;          
+        }
+
+        function getValue(id)
+        {   
+            textValue = document.getElementById("content-value").value;
+             return TextValye
+        }
+function showValue()
+{
+output= getValue('valueA');
+alert(output);
+
+}
+        // Scalar
+        // Data Type = String, integer, boolean, float  
+        scalarValue = 'This is string'
+
+        // Nonscalar
+        // 1. Array : 0, 1, 2 .......
+            myArray = [
+                        'Apple', // 0
+                        'Orange', // 1
+                        'Peach', // 2
+                        2, // 3
+                        true // 4
+                    ];
+            // myArray[2]
+           
+
+        // 2. Object
+            // Key-value pair
+            // Property : non-functional key-value 
+            // Method : functional  key-value 
+            
+            myObject = {
+                            'name': 'Arnie', 
+                            'surname': 'Alejandro',
+                            'output': function() { 
+                                fruit = 'orange';
+                                alert(fruit);
+                            }
+                        }
+            //alert(myObject['name']);
+            
+
+            function returnCharacter()
+            {
+                character = {
+                    'name' : 'Ryu',
+                    'ss1'   : function() { alert('Play ss1, give 10 damage') },
+                    'ss2'   : 'Dragon Punch'
+                }
+                return character;
+            }
+            //value = returnCharacter().ss1();
+
+            mydocument = {
+                'getElementById' : function(varValue) {
+                    getElement = {
+                        'value': varValue
+                    }
+                    return getElement;
+                }
+            }
+            
+            testValue = mydocument.getElementById('test value').value
+            alert(testValue);
+    </script>
+    <body>
+        <h1 id="output"></h1>
+        Value 1: <input id="valueA" type="text"> <br/>
+        Value 2: <input id="valueB" type="text"> <br/>
+        <button onclick="showValue()">Add</button>
+
+        <br/><br/><br/>
+        <div id="content" style="font-size: 30px"></div>
+        <input id="content-value" type="text" onkeyup="composer()" />
+
+
+    </body>
+</html>

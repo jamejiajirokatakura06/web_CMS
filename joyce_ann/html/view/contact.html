@@ -1,0 +1,118 @@
+<div id="contact-sent" class="cover --contact-sent--">
+    <div class="background"></div>
+    <div class="form">            
+        <div class="row-mid">
+            <div class="center" style="color: rgb(40, 128, 22);">
+                Message Sent
+                <br/><br/>
+            </div>
+            <form id="login-form" action="cms.php?page=authentication" method="POST">
+                <table style="width:100%">                    
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <a onclick="removeSuccess()" class="button medium" style="background-color: crimson;">Close</a>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>                
+    </div>        
+</div>
+
+<div id="contact-banner" class="row"> 
+    <div class="background" style="background-image: url('view/images/ani.png');"></div>
+    
+    <div class="row-mid center">
+        <h1>--title--</h1>
+        <h2>--caption--</h2>
+    </div>
+</div>
+
+
+<div id="contact-content" class="row">
+    <div class="row-mid">
+        <div class="column left">
+            --content--
+        </div>
+        <div class="column right"> 
+            <form id="contact-form" action="/?page=contact" method="post">      
+                <input type="hidden" name="send" value="true"/>             
+                <table style="width: 100%">
+                    <tr>
+                        <td style="width: 27%">Name</td>
+                        <td style="width: 73%">
+                            <div class="input">
+                                <input type="text" name="list_message_name" />
+                            </div>
+                        </td>                            
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td>
+                            <div class="input">
+                                <input type="text" name="list_message_surname" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Company Name</td>
+                        <td>
+                            <div class="input">
+                                <input type="text" name="list_message_company" />
+                            </div>
+                        </td>                                                        
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <div class="input">
+                                <input type="text" name="list_message_email" />
+                            </div>
+                        </td>                                                        
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td>
+                            <div class="input">
+                                <input type="text" name="list_message_mobile" />
+                            </div>
+                        </td>                                                        
+                    </tr>
+                    <tr>
+                        <td>Subject</td>
+                        <td>
+                            <div class="input">
+                                <select name="list_message_subject">
+                                    <option>Inquiry</option>
+                                    <option>Proposal</option>
+                                    <option>Request</option>
+                                </select>
+                            </div>
+                        </td>                                                        
+                    </tr>
+                    <tr>
+                        <td colspan="2" >Body</td>
+                    </tr>
+                    <tr>
+                        
+                        <td colspan="2">
+                            <div class="input">
+                                <textarea name="list_message_content" style="height: 300px" ></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: right;">
+                            <a class="button" onclick="$('#contact-form').submit()">Send</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+
+
+        <div class="clear"></div>
+    </div>
+</div>

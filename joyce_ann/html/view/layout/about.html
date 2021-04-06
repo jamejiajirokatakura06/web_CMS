@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="--css-global--" />
+        <link rel="stylesheet" href="--css-about--" />
+    </head> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script>
+        function getLogin()
+        {
+            $('#cover').removeClass('hide');
+        }
+
+        function removeLogin()
+        {
+            $('#cover').addClass('hide');
+        }
+
+        function login()
+        {
+            username = $('#username').val();
+            password = $('#password').val();
+            myUsername = 'arnieio';
+            myPassword = 'Pass123';
+
+            if(username == myUsername && password == myPassword)
+            {
+                window.location.href = 'cms-dashboard.html';
+            }
+            else
+            {
+                alert("Invalid username or password");
+            }          
+
+        }
+    </script>
+    <body>
+        <div id="cover" class="hide">
+            <div class="background"></div>
+            <div class="form">
+                <div class="row-mid">
+                    <table style="width:100%">
+                        <tr>
+                            <td style="width:30%">Username:</td>
+                            <td style="width:70%">
+                                <div class="input">
+                                    <input id="username" type="text" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td>
+                                <div class="input">
+                                    <input id="password" type="password" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">
+                                <a onclick="removeLogin()" class="button medium" style="background-color: crimson;">Cancel</a>
+                                <a onclick="login()" class="button medium">Login</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>                
+            </div>
+            
+        </div>
+        <div id="top-header" class="row-border fixed">
+            <div class="row-mid">
+                <div class="section left logo">
+                    <img src="images/icons/mami.png" />
+                </div>    
+                <!--Float Right, right to left orientation-->
+                <div class="section right link-login">
+                    <a onclick="getLogin()" href="#" class="button">Login</a>
+                </div>   
+                <div class="section right links">
+                    <a href="home.html">Home Page</a>
+                    <a href="about.html">About Me</a>
+                    <a href="contact.html">Contact Me</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div id="about-banner" class="row">           
+            <div class="absolute abstract">
+                <img src="images/abstract-line.png" />
+            </div> 
+            <div class="row-mid">
+                <div class="absolute name">
+                    <h1>Arnie Alejandro</h1>
+                    <h2>Jack of all traits, master of none</h2>
+                </div>
+                <div class="absolute photo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>            
+        </div>
+
+        <div id="about-content" class="row">
+            <div class="row-mid">
+                <div class="center title">
+                    <h1>This is about me.</h1>
+                </div>
+                <div class="content">
+                    --content--
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>     
+        
+        <div id="footer" class="row">
+            <div class="row-mid center">
+                <span>Copyright Arnie Alejandro 2020</span>
+            </div>
+        </div>
+        
+    </body>
+</html>

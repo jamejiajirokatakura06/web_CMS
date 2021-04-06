@@ -1,0 +1,19 @@
+<div>We're a distributed company with people located all around the world.</div>
+<div>We can direct you to local resources to help you:</div>
+<div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ul>
+</div>
+<div>
+    It's important to us that we provide you with what 
+    you need to be <span style="color:green; font-weight: bold;">successful.</span> 
+    Simply complete the form and we'll be in touch soon.
+</div>
+<div>
+    Also, make sure to check out 
+    our <a href="about.html">community page</a> for additional questions, 
+    technical or otherwise!
+</div>

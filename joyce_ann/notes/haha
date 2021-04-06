@@ -1,0 +1,15 @@
+ $columns[] ='name';
+    $columns[] = 'surname';
+    $columns[] = 'age';
+
+    $values[] ="'Joyce'";
+    $values[] = "'Mejia'";
+    $values[] = "'3x'";
+    
+    pr($columns);
+
+$imploded = implode (",", $columns);
+$imploded2 = implode(",", $values);
+$sql = "INSERT INTO table ($imploded) VALUES ($imploded2)";
+echo $sql;
+    die();

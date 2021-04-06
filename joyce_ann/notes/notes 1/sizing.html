@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All about sizing</title>
+        
+    </head>
+    
+    <body>
+        <style type="text/css">
+            .section {
+                border: 1px solid black;
+            }
+            .small-px  {
+                width: 100px;
+                height: 100px;
+                overflow: auto; /* hidden,auto */
+            }       
+            .small-pct {
+                width: 30%;
+            } 
+
+            .medium-px {
+                width: 400px;
+            }
+
+            .medium-pct {
+                width: 50%;
+            }
+
+        </style>
+        <!-- Scenario  1 -->
+        <div class="section small-px">Box 1 - Pixel</div>
+        <div class="section small-pct">Box 1 - PCT</div>
+        <div class="section small-px">
+            Aasd asjd jasdlk aslkjd lasdlk asld 
+            jaslkdj alsjd lasla asd asd asd
+            Aasd asjd jasdlk aslkjd lasdlk asld 
+            jaslkdj alsjd lasla asd asd asd
+            asdjalsjd
+            asd;lk
+        </div>
+        <br/>
+
+        <!-- Scenario 2 -->
+        <div class="section medium-px">
+            <div class="section small-pct">Box 2 - PX/PCT</div>
+        </div>
+        <br/>
+
+        <!-- Scenario 3 -->
+        <div class="section medium-pct">
+            <div class="section small-pct">Box 2 - PCT/PCT</div>
+        </div>   
+
+        <!-- For inline -->
+        <!-- Dimensions of Inline elements can't be changed -->
+        <span class="section medium-pct">This should not work</span>
+
+    </body>
+</html>

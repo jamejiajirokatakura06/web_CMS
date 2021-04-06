@@ -1,0 +1,54 @@
+#contact-banner {
+  position: relative;
+  margin-top: 82px;
+  height: 500px;
+  background-color: #b3b3cc;
+}
+
+#contact-banner .background {
+  position: absolute;
+  background-size: cover;
+  background-position: center bottom;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 20px;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+#contact-banner .center {
+  padding-top: 100px;
+  text-shadow: 1px 1px 20px gray;
+}
+
+#contact-content {
+  padding-top: 150px;
+}
+
+#contact-content .column {
+  float: left;
+}
+
+#contact-content .column.left {
+  width: 480px;
+  padding-right: 120px;
+}
+
+#contact-content .column.right {
+  border: 1px solid #b3b3cc;
+  padding: 20px;
+  width: 558px;
+}
+
+#contact-content .column div {
+  margin-bottom: 20px;
+}
+
+#contact-content ul {
+  margin: 0;
+  list-style: circle;
+}
+
+#contact-content ul li {
+  padding: 5px 0 5px 30px;
+}

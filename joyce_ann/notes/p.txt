@@ -1,0 +1,115 @@
+/*$about = file_get_contents("view/about.html");
+
+echo $about;
+*/
+
+/*$var1= "Joyce";
+$var2= "Mejia";
+$Var1= "Ricku";
+
+
+echo $var1;
+*/
+
+/*$content = file_get_contents("model/about.body.txt");*/
+/*$content= "Hello World";
+
+echo $content;
+
+require("view/about.php");*/
+aboutHTML= file_get_contents("view/about.html");
+$aboutcontent = file_get_contents("model/about-body.txt");
+$output = str_replace("--content--", $aboutcontent, $aboutHTML);
+
+
+$globalCSS= "view/css/global.css";
+$aboutCSS="view/css/about.css";
+
+$output= str_replace("--css-global--", $globalCSS, $output);
+$output= str_replace("--css-about--", $aboutCSS, $output);
+
+/*Associative Array */
+$myArray["name"]="Joyce";
+$myArray["surname"]="Mejia";
+$myArray["gender"]="Female";
+
+/*Print array 
+echo '<pre>';
+print_r($myArray);
+echo  '<pre>';*/
+
+/*PHP Function 
+function pr($myArray)
+{
+    echo '<pre>';
+    print_r($myArray);
+    echo  '<pre>';
+
+}
+pr($myArray);*/
+
+#foreach
+
+<?php
+
+$name= "-first-name- -last-name-";
+
+$name = str_replace("-first-name-", "Joyce" , $name);
+
+
+
+$aboutHTML= file_get_contents("view/about.html");
+$aboutcontent = file_get_contents("model/about-body.txt");
+$output = str_replace("--content--", $aboutcontent, $aboutHTML);
+
+
+$globalCSS= "view/css/global.css";
+$aboutCSS="view/css/about.css";
+
+$output= str_replace("--css-global--", $globalCSS, $output);
+$output= str_replace("--css-about--", $aboutCSS, $output);
+
+/*Associative Array */
+$myArray["name"]="Joyce";
+$myArray["surname"]="Mejia";
+$myArray["gender"]="Female";
+
+/*Print array 
+echo '<pre>';
+print_r($myArray);
+echo  '<pre>';*/
+
+/*PHP Function 
+function pr($myArray)
+{
+    echo '<pre>';
+    print_r($myArray);
+    echo  '<pre>';
+
+}
+pr($myArray);*/
+
+#foreach
+$view['content'] = file_get_contents("model/about-body.txt");
+$view['css-global']= "view/css/global.css";
+$view['css-about']= "view/css/about.css";
+
+$aboutHTML= file_get_contents("view/about.html");
+
+$salutation="Mr";
+$name="{$salutation} Joyce Mejia";
+
+foreach($view as $x => $value)
+{
+
+    $key = "--{$x}--";
+    $output= str_replace($key, $value ,$aboutHTML);
+    $aboutHTML= $output;
+}
+ echo $aboutHTML;
+
+<?php
+
+#Query String
+
+echo $_GET['page'];

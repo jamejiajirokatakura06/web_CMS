@@ -1,0 +1,11 @@
+
+
+.navigation
+{
+ background-color: aqua;
+ width: 100%;
+ margin-bottom: auto;
+ z-index: 2;
+ position: relative;
+
+}
